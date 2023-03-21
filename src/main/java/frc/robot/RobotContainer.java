@@ -147,20 +147,20 @@ public class RobotContainer {
    * Generates the Path Planner Groups and add them to the AutoChooser
    */
   private void generatePathPlannerPathGroups() {
-    List<PathPlannerTrajectory> Station_2_Engage = PathPlanner.loadPathGroup("Station 2 Engage",
-        new PathConstraints(2, 2));
-    List<PathPlannerTrajectory> Station_1_Cube_and_Pickuptraj = PathPlanner.loadPathGroup("Station 1 Cube and Pickup",
-        new PathConstraints(2, 3));
-    List<PathPlannerTrajectory> Station_1_Drop_Cone_And_Pickuptraj = PathPlanner.loadPathGroup(
-        "Station 1 Drop Cone and Pickup",
-        new PathConstraints(2, 3));
-    List<PathPlannerTrajectory> Station_3_Engage = PathPlanner.loadPathGroup("Station 3 Engage",
-        new PathConstraints(2, 2));
+    // List<PathPlannerTrajectory> Station_2_Engage = PathPlanner.loadPathGroup("Station 2 Engage",
+    //     new PathConstraints(2, 2));
+    // List<PathPlannerTrajectory> Station_1_Cube_and_Pickuptraj = PathPlanner.loadPathGroup("Station 1 Cube and Pickup",
+    //     new PathConstraints(2, 3));
+    // List<PathPlannerTrajectory> Station_1_Drop_Cone_And_Pickuptraj = PathPlanner.loadPathGroup(
+    //     "Station 1 Drop Cone and Pickup",
+    //     new PathConstraints(2, 3));
+    // List<PathPlannerTrajectory> Station_3_Engage = PathPlanner.loadPathGroup("Station 3 Engage",
+    //     new PathConstraints(2, 2));
 
-    autoChooser.setDefaultOption("Station 2 Engage", Station_2_Engage);
-    autoChooser.addOption("Station 1 Cube and Pickup", Station_1_Cube_and_Pickuptraj);
-    autoChooser.addOption("Station 1 Drop Cone And Pickup", Station_1_Drop_Cone_And_Pickuptraj);
-    autoChooser.addOption("Station 3 Engage", Station_3_Engage);
+    // autoChooser.setDefaultOption("Station 2 Engage", Station_2_Engage);
+    // autoChooser.addOption("Station 1 Cube and Pickup", Station_1_Cube_and_Pickuptraj);
+    // autoChooser.addOption("Station 1 Drop Cone And Pickup", Station_1_Drop_Cone_And_Pickuptraj);
+    // autoChooser.addOption("Station 3 Engage", Station_3_Engage);
   }
 
   /**
