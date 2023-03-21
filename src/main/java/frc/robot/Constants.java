@@ -42,6 +42,7 @@ public final class Constants {
   public static final double PIGEON_DEADBAND_GOING_DOWN = -.5;
   public static final double DRIVETRAIN_WHEELBASE_METERS = 0.6096; // DONE Measure and set wheelbase
 
+  public static final String CANIVORE_BUS_NAME = "CANivore";
   public static final int DRIVETRAIN_PIGEON_ID = 5; // DONE Set Pigeon ID
 
   public static final int FRONT_LEFT_MODULE_DRIVE_MOTOR = 1; // DONE Set front left module drive motor ID
