@@ -92,7 +92,7 @@ public class DrivetrainSubsystem extends SubsystemBase {
                         // Back right
                         new Translation2d(-DRIVETRAIN_TRACKWIDTH_METERS / 2.0, -DRIVETRAIN_WHEELBASE_METERS / 2.0));
 
-        WPI_Pigeon2 gyroscope = new WPI_Pigeon2(DRIVETRAIN_PIGEON_ID, "CANivore");
+        WPI_Pigeon2 gyroscope = new WPI_Pigeon2(DRIVETRAIN_PIGEON_ID, Constants.CANIVORE_BUS_NAME);
 
         private final SwerveDriveOdometry odometry;
 
@@ -121,9 +121,9 @@ public class DrivetrainSubsystem extends SubsystemBase {
                                                 .withSize(2, 4)
                                                 .withPosition(0, 0))
                                 .withGearRatio(SdsModuleConfigurations.MK4_L1)
-                                .withDriveMotor(MotorType.FALCON, Constants.FRONT_LEFT_MODULE_DRIVE_MOTOR, "CANivore")
-                                .withSteerMotor(MotorType.FALCON, Constants.FRONT_LEFT_MODULE_STEER_MOTOR, "CANivore")
-                                .withSteerEncoderPort(Constants.FRONT_LEFT_MODULE_STEER_ENCODER, "CANivore")
+                                .withDriveMotor(MotorType.FALCON, Constants.FRONT_LEFT_MODULE_DRIVE_MOTOR, Constants.CANIVORE_BUS_NAME)
+                                .withSteerMotor(MotorType.FALCON, Constants.FRONT_LEFT_MODULE_STEER_MOTOR, Constants.CANIVORE_BUS_NAME)
+                                .withSteerEncoderPort(Constants.FRONT_LEFT_MODULE_STEER_ENCODER, Constants.CANIVORE_BUS_NAME)
                                 .withSteerOffset(Constants.FRONT_LEFT_MODULE_STEER_OFFSET)
                                 .build();
 
@@ -132,9 +132,9 @@ public class DrivetrainSubsystem extends SubsystemBase {
                                                 .withSize(2, 4)
                                                 .withPosition(2, 0))
                                 .withGearRatio(SdsModuleConfigurations.MK4_L1)
-                                .withDriveMotor(MotorType.FALCON, Constants.FRONT_RIGHT_MODULE_DRIVE_MOTOR, "CANivore")
-                                .withSteerMotor(MotorType.FALCON, Constants.FRONT_RIGHT_MODULE_STEER_MOTOR, "CANivore")
-                                .withSteerEncoderPort(Constants.FRONT_RIGHT_MODULE_STEER_ENCODER, "CANivore")
+                                .withDriveMotor(MotorType.FALCON, Constants.FRONT_RIGHT_MODULE_DRIVE_MOTOR, Constants.CANIVORE_BUS_NAME)
+                                .withSteerMotor(MotorType.FALCON, Constants.FRONT_RIGHT_MODULE_STEER_MOTOR, Constants.CANIVORE_BUS_NAME)
+                                .withSteerEncoderPort(Constants.FRONT_RIGHT_MODULE_STEER_ENCODER, Constants.CANIVORE_BUS_NAME)
                                 .withSteerOffset(Constants.FRONT_RIGHT_MODULE_STEER_OFFSET)
                                 .build();
 
@@ -143,9 +143,9 @@ public class DrivetrainSubsystem extends SubsystemBase {
                                                 .withSize(2, 4)
                                                 .withPosition(4, 0))
                                 .withGearRatio(SdsModuleConfigurations.MK4_L1)
-                                .withDriveMotor(MotorType.FALCON, Constants.BACK_LEFT_MODULE_DRIVE_MOTOR, "CANivore")
-                                .withSteerMotor(MotorType.FALCON, Constants.BACK_LEFT_MODULE_STEER_MOTOR, "CANivore")
-                                .withSteerEncoderPort(Constants.BACK_LEFT_MODULE_STEER_ENCODER, "CANivore")
+                                .withDriveMotor(MotorType.FALCON, Constants.BACK_LEFT_MODULE_DRIVE_MOTOR, Constants.CANIVORE_BUS_NAME)
+                                .withSteerMotor(MotorType.FALCON, Constants.BACK_LEFT_MODULE_STEER_MOTOR, Constants.CANIVORE_BUS_NAME)
+                                .withSteerEncoderPort(Constants.BACK_LEFT_MODULE_STEER_ENCODER, Constants.CANIVORE_BUS_NAME)
                                 .withSteerOffset(Constants.BACK_LEFT_MODULE_STEER_OFFSET)
                                 .build();
 
@@ -154,9 +154,9 @@ public class DrivetrainSubsystem extends SubsystemBase {
                                                 .withSize(2, 4)
                                                 .withPosition(6, 0))
                                 .withGearRatio(SdsModuleConfigurations.MK4_L1)
-                                .withDriveMotor(MotorType.FALCON, Constants.BACK_RIGHT_MODULE_DRIVE_MOTOR, "CANivore")
-                                .withSteerMotor(MotorType.FALCON, Constants.BACK_RIGHT_MODULE_STEER_MOTOR, "CANivore")
-                                .withSteerEncoderPort(Constants.BACK_RIGHT_MODULE_STEER_ENCODER, "CANivore")
+                                .withDriveMotor(MotorType.FALCON, Constants.BACK_RIGHT_MODULE_DRIVE_MOTOR, Constants.CANIVORE_BUS_NAME)
+                                .withSteerMotor(MotorType.FALCON, Constants.BACK_RIGHT_MODULE_STEER_MOTOR, Constants.CANIVORE_BUS_NAME)
+                                .withSteerEncoderPort(Constants.BACK_RIGHT_MODULE_STEER_ENCODER, Constants.CANIVORE_BUS_NAME)
                                 .withSteerOffset(Constants.BACK_RIGHT_MODULE_STEER_OFFSET)
                                 .build();
 
